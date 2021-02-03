@@ -1,2 +1,167 @@
-안녕하세요
-sdsdfsdf
+<head>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet"  type="text/css" href="style.css"/>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+   
+  <style>
+    
+    body {
+      margin: 0px;
+      animation: fadein 1000ms ease-out;
+      background-color: white;
+    }
+  </style>
+</head>
+  </head>
+  
+  <body>
+   <!--상단 네브바-->
+
+<div>
+  <div id="div_nav_area" style="width: 100%; height: 70px; position: relative;  z-index: 100; background-color: rgb(34, 45, 50);position: fixed; z-index: 10000000; margin-top: 0px;"></div>
+<div class="main_nav_area" style="position: fixed; z-index: 10000000; margin-top: 0px; ">
+    <div class="main_nav_leftbox">
+        <img style="height: 80%; margin-left: 30px; cursor: pointer; margin-right: 3rem;" src="/images/sojungdea.png" alt="" onclick="location.href='#'">
+    </div>
+    <div class="main_nav_rightbox">
+      <div class="main_nav_info_textbox" style="width: 4.5rem; margin-right: 1rem;">
+        <a class="main_nav_info_text" style="font-size: 16px; text-decoration: none;">ㅁㅁ부</a>
+      </div>
+      <div class="main_nav_info_textbox" style="width: 4.5rem; margin-right: 1rem;">
+        <a class="main_nav_text" style="font-size: 16px; text-decoration: none;">김민수 님</a>
+      </div>
+     
+</div>
+</div>
+
+    <!--사이드 바-->
+ <nav class = "sidebar">   
+    <ul>
+     <li>
+         <a href="#" class="feat-btn">학생 
+           <span class="fas fa-caret-down first"></span>
+         </a>
+         
+         <ul class="feat-show">
+             <li><a href="#">학생목록</a></li>
+             <li><a href="#">학생추가</a></li>
+         </ul>
+     </li>
+     <li>
+         <a href="#" class="serv-btn">프로그램 
+           <span class="fas fa-caret-down second"></span>
+         </a>
+         
+ 
+         <ul class="serv-show">
+             <li><a href="#">프로그램 목록</a></li>
+             <li><a href="#">프로그램 추가</a></li>
+             <li><a href="#">스템프 추가</a></li>
+             <li><a href="#">카테고리 추가</a></li>
+         </ul>
+     </li>
+     <li>
+         <a href="#" class="etc-btn">신청 <span class="fas fa-caret-down thrid"></span> </a>
+         
+ 
+         <ul class="etc-show">
+             <li><a href="#">내부 프로그램 신청</a></li>
+             <li><a href="#">외부 프로그램 신청</a></li>
+         </ul>
+     </li>
+    </ul>
+    <div class="logout_text" style="font-size: 19px; ">로그아웃 ➠</div>
+
+ </nav>
+
+
+ <!--누르면 내려오게 하기-->>
+ <script>
+   $('.feat-btn').click(function(){
+     $('nav ul .feat-show').toggleClass("show");
+     $('nav ul .first').toggleClass("rotate");
+ 
+   });
+   $('.serv-btn').click(function(){
+     $('nav ul .serv-show').toggleClass("show");
+     $('nav ul .second').toggleClass("rotate");
+ 
+   });
+   $('.etc-btn').click(function(){
+     $('nav ul .etc-show').toggleClass("show");
+     $('nav ul .thrid').toggleClass("rotate");
+ 
+   });
+  
+ </script>
+  </body>
+  
+   <!--프로그램 추가-->
+  
+   <div class="app_for_exhibition_area">
+    <div class="app_for_exhibition_container">
+        <div class="app_for_exhibition_container_right">
+            <div class="afe_right_container" style="padding-top: 20px; padding-bottom: 20px">
+                <div style=" padding: 30px;" >
+                <div class="afe_right_headbox" style="font-size: 30px; text-decoration: none;">
+                   스탬프 등록하기
+                </div>
+                <div class="afe_right_headbox" style="margin-top: 50px; height: 30px;;justify-content: flex-start;">
+                    스탬프 명
+                </div>
+                <form action="#" method="POST">
+                  <div class="afe_right_headbox" style="margin-top: 0px; justify-content: flex-start;">
+                    <input class="card_input_box_first" type="text" name="stamp_name" id="" style="width: 100%;"placeholder="ex) 동서인 아이디어 참가">
+                </div>
+                <div class="afe_right_headbox" style="margin-top: 10px; height: 30px;;justify-content: flex-start; ">
+                  카테고리 명
+              </div>
+              <div class="afe_right_headbox" style="margin-top: 0px; justify-content: flex-start;">
+                <select style=" width: 640px; height: 35px; outline: none; font-size: 15px;" name="stamp_category">
+                  <option value="카테고리 종류1">카테고리 종류1</option>
+                  <option value="카테고리 종류2">카테고리 종류2</option>
+                  <option value="카테고리 종류3">카테고리 종류3</option>
+              </select>
+             </div>
+                <div class="afe_right_headbox" style="margin-top: 10px; height: 30px;;justify-content: flex-start; ">
+                  스템프 코드
+              </div>
+              <div class="afe_right_headbox" style="margin-top: 0px; justify-content: flex-start;">
+                  <input class="card_input_box_first" type="text" name="pwd" id="" style="width: 100%;"placeholder="ex)A001 (카테고리코드+번호)">
+              </div>              
+                <div class="afe_right_headbox" style="margin-top: 10px; height: 30px;;justify-content: flex-start; ">
+                    내부/외부
+                </div>
+                <div class="afe_right_headbox" style="margin-top: 0px; justify-content: flex-start;">
+                  <select style=" width: 100%; height: 35px; outline: none; font-size: 15px;" name="inout" id="">
+                    <option value="내부">내부</option>
+                    <option value="외부">외부</option>
+                </select>
+               </div>
+               <div class="afe_right_headbox" style="margin-top: 10px; height: 30px;;justify-content: flex-start; ">
+                최대 갯수
+            </div>
+            <div class="afe_right_headbox" style="margin-top: 0px; justify-content: flex-start;">
+                <input class="card_input_box_first" type="text" name="maximum_stamp" id="" style="width: 100%;">
+            </div>
+  
+                <div class="exhibition_approval_area" style="align-items: flex-start; border: none;">
+                    <div class="afe_right_app_exhibition_btn_container" style="margin-top: 10px; display: flex;">
+                        <button class="afe_right_app_exhibition_btn" style="width: 200px; margin-right: 50px;">등록하기</button>
+                    </form>
+                        <button class="afe_right_app_exhibition_btn" style="width: 200px;">취소하기</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  </body>
+  </html>

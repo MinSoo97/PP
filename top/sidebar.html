@@ -1,0 +1,60 @@
+ <!--사이드 바-->
+ <nav class = "sidebar">   
+    <ul>
+     <li>
+         <a href="#" class="feat-btn">학생 
+           <span class="fas fa-caret-down first"></span>
+         </a>
+         
+         <ul class="feat-show">
+             <li><a href="#">학생목록</a></li>
+             <li><a href="#">학생추가</a></li>
+         </ul>
+     </li>
+     <li>
+         <a href="#" class="serv-btn">프로그램 
+           <span class="fas fa-caret-down second"></span>
+         </a>
+         
+ 
+         <ul class="serv-show">
+             <li><a href="#">프로그램 목록</a></li>
+             <li><a href="#">프로그램 추가</a></li>
+             <li><a href="#">스템프 추가</a></li>
+             <li><a href="#">카테고리 추가</a></li>
+         </ul>
+     </li>
+     <li>
+         <a href="#" class="etc-btn">신청 <span class="fas fa-caret-down thrid"></span> </a>
+         
+ 
+         <ul class="etc-show">
+             <li><a href="#">내부 프로그램 신청</a></li>
+             <li><a href="#">외부 프로그램 신청</a></li>
+         </ul>
+     </li>
+    </ul>
+    <div class="logout_text" style="font-size: 19px; ">로그아웃 ➠</div>
+
+ </nav>
+
+
+ <!--누르면 내려오게 하기-->>
+ <script>
+   $('.feat-btn').click(function(){
+     $('nav ul .feat-show').toggleClass("show");
+     $('nav ul .first').toggleClass("rotate");
+ 
+   });
+   $('.serv-btn').click(function(){
+     $('nav ul .serv-show').toggleClass("show");
+     $('nav ul .second').toggleClass("rotate");
+ 
+   });
+   $('.etc-btn').click(function(){
+     $('nav ul .etc-show').toggleClass("show");
+     $('nav ul .thrid').toggleClass("rotate");
+ 
+   });
+  
+ </script>
