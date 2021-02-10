@@ -128,3 +128,68 @@ input.submit:hover{background:#ada074;color:white;border:1px solid #ada074;}
 .footer .menu-footer a{line-height:46px;padding:10px;color:#a4a4a4;-webkit-transition: all 0.2s ease-in;-moz-transition: all 0.2s ease-in;-ms-transition: all 0.2s ease-in;-o-transition: all 0.2s ease-in;transition: all 0.2s ease-in;}
 .footer .menu-footer a:hover{color:#ada074;}
 .footer .copyright{width:80%;position:relative;font-weight:300;margin:0 auto;padding:30px 0 50px;text-align:center;font-size:14px;line-height:36px;color:#a4a4a4;}
+
+
+.icons-header{
+    display:flex;
+    justify-content:center;
+    margin-top: 30px;
+}
+
+.icons-header .icon{
+    text-align:center;
+    color:#fff;
+    width:20px;
+    height:20px;
+    font-size:20px;
+    padding:10px;
+    margin:2px;
+    border-radius:50%;
+    border:2px solid #fff;
+    transition:all .7s
+}
+
+.icons-header .icon:active, .icons-header .icon:hover{
+    color:#1a222c;
+    background:#fff
+}
+@media only screen and (min-width: 768px){
+    .icons-header .icon{
+        width:35px;
+        height:35px;
+        font-size:35px
+    }
+}
+.down,.icons-header,.user{
+    text-align:center
+}
+
+.down
+{
+    color:#fff;
+    position:absolute;
+    bottom:25px;
+    width:100%;
+    display:block;
+    cursor:pointer;
+    margin:0 auto;
+    font-size:30px
+}
+.down .icon{
+    position:absolute;
+    -webkit-transform-style:preserve-3d;
+    transform-style:preserve-3d;
+    top:50%;
+    left:50%;
+    -webkit-transform:translate(-50%, -50%);
+    transform:translate(-50%, -50%);
+    width:100px
+    ;height:100px;
+    fill:#fff;
+    -webkit-animation:pulse 1.3s infinite;
+    animation:pulse 1.3s infinite
+}
+
+.down .icon:active, .down .icon:hover, .footer a:active, .footer a:hover{
+    color:#4b5664
+}
