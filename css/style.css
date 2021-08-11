@@ -244,3 +244,7 @@ input.submit:hover{background:#ada074;color:white;border:1px solid #ada074;}
 .skills .content:after{content:"";display:block;clear:both;}
 .skills h1{font-size:34px;color:black;text-align:center;margin-top:120px;letter-spacing:6px;font-weight:bold;text-transform:uppercase;line-height:1.2;}
 .skills hr{color: black;margin-top:30px;background-color: black;height: 1px;width:106px;border:0;}
+
+.line1{
+    margin-top: 50px;
+}
